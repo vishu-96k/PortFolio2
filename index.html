@@ -8,17 +8,20 @@
     <script src="https://kit.fontawesome.com/b3fdcfd55f.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    
     <div id="header">
          <div class="container">
             <nav>
-                <img src="images/logo.img" class="logo" alt="logo">
-                <ul>
-                    <li> <a href="#">Home</a></li>
-                    <li> <a href="#">About</a></li>
-                    <li> <a href="#">Services</a></li>
-                    <li> <a href="#">Portfolio</a></li>
-                    <li> <a href="#">Contact</a></li>
+                <img src="images/logo.jpg" class="logo" alt="logo">
+                <ul id="sidemenu">
+                    <li> <a href="#header">Home</a></li>
+                    <li> <a href="#about">About</a></li>
+                    <li> <a href="#services">Services</a></li>
+                    <li> <a href="#portfolio">Portfolio</a></li>
+                    <li> <a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark fas" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars fas" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>C# devloper</p>
@@ -34,7 +37,7 @@
                     <img  src="images/user.JPG" alt="user img">
                 </div>
                 <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
+                    <h1 class="sub-titles">About Me</h1>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto officia sed facere iusto exercitationem amet molestias numquam minima, natus explicabo tempore omnis provident officiis, illo necessitatibus temporibus aliquam vitae, voluptate voluptas obcaecati neque recusandae! Veniam nihil adipisci recusandae necessitatibus similique vel quaerat? Temporibus odio sed in quod nulla dolorem nam!</p>
 
                     <div class="tab-titles">
@@ -85,7 +88,7 @@
     <!-----Services-->
     <div id="services">
         <div class="container">
-            <h1 class="sub-title">My Services</h1>
+            <h1 class="sub-titles">My Services</h1>
             <div class="services-list">
                 <div>
                     <i class="fa-solid fa-code"></i>
@@ -109,6 +112,58 @@
         </div>
     </div>
 
+    <!-------PORTFOLIO-->
+    <div id="portfolio">
+        <div class="container">
+           <h1 class="sub-titles">My Work</h1>
+           <div class="work-list">
+            <div class="work">
+                <img src="Images/work-2.png" alt="">
+                <div class="layer">
+                    <h3>HomeyGo: Hotel Booking App</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis consectetur beatae blanditiis harum odit. Quis minus facilis dolore. Unde repudiandae placeat alias quas enim. Temporibus quos nam voluptatibus. Esse, dignissimos.</p>
+                    <a href="https://homeygo.onrender.com/"><i class="fa-solid fa-link"> </i> </a>
+                </div>
+            </div>
+           </div>
+
+           <a href="#" class="btn">See More</a>
+                
+        </div>
+    </div>
+
+    <!----------CONTACT---------->
+    <div id="contact">
+        <div class="container">
+            <div class="row"> 
+                <div class="contact-left">
+                    <h1 class="sub-titles">Contact Me</h1>
+                    <p ><i class="fa-solid fa-paper-plane"></i> vishuu96.k@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 8600942798</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/vishu-96k"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/gaikwadvishwajeet/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="my-cv.pdf" target="_blank" class="btn btn2">View Resume</a>
+                    
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="Name" id="" placeholder="Your Name">
+                        <input type="email" name="email" id="" placeholder="Your Email">
+                        <textarea name="message" id=""  rows="6"  placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+<div class="copy-right">
+    <p>Copyright <i class="fa-solid fa-copyright"></i> Vishwajeet Gaikwad </p>
+</div>
+
+    </div>
 
     <script src="script.js"></script>
 </body>
