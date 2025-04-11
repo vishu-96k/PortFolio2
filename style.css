@@ -445,3 +445,21 @@ nav .fas{
     }
     
 }
+
+#typewriter-text {
+    border-right: 2px solid white;
+    padding-right: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: blink 0.75s step-end infinite;
+    font-weight: bold;
+  }
+  
+  @keyframes blink {
+    from, to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: white;
+    }
+  }
